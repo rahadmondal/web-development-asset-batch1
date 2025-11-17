@@ -1,12 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="output.css">
-</head>
-<body>
-    
-</body>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="bg-nav shadow-sm">
+        <div class="container mx-auto navbar px-2 md:px-4 lg:px-6">
+          <div class="navbar-start">
+            <div class="text-xl flex items-center gap-2.5">
+              <img
+                src="../c1-assets/logo-header.png"
+                class="w-[30px] h-[30px]"
+                alt=""
+              />
+              <p class="hidden lg:block">Browse4Pets</p>
+            </div>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a>Find a pet</a></li>
+              <li><a>Breeds</a></li>
+              <li><a>Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <div class="dropdown dropdown-end">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <i class="fa-solid fa-bars"></i>
+              </div>
+              <ul
+                tabindex="-1"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-32 p-2 shadow space-y-3"
+              >
+                <li><a>Find a pet</a></li>
+                <li><a>Breeds</a></li>
+                <li><a>Contact Us</a></li>
+                <li>
+                  <div class="flex">
+                    <button class="btn btn-square">
+                      <i class="fa-solid fa-clipboard-user"></i>
+                    </button>
+                    <button class="btn btn-square">
+                      <i class="fa-solid fa-bed"></i>
+                    </button>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="hidden lg:block">
+              <div>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-regular fa-bell"></i>
+                <button class="btn btn-outline btn-warning">Login</button>
+                <button class="btn btn-warning">Register</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+  </body>
 </html>
