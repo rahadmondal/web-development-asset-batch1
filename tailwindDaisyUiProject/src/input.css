@@ -4,6 +4,17 @@
 
 @theme {
   --color-nav: #fff9f4;
+  --color-primary-bg: #f9df8a;
   --font-header: "ADLaM Display", system-ui;
   --font-text: "Sora", sans-serif;
+}
+
+@layer components {
+  .category-card {
+    @apply bg-primary-bg flex flex-col items-center p-12 rounded-2xl gap-3;
+  }
+
+  .category-img {
+    @apply bg-white p-4 rounded-full;
+  }
 }
