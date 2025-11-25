@@ -326,6 +326,127 @@ console.log("Day 3 With Js condition");
 // Loop Ki? (What is a Loop?)
 // Loop mane holo "Eki kaj bar bar kora". Jokhon amra chai computer eki kaj 10 bar, 100 bar, ba condition puron na howa porjonto koruk, tokhon amra Loop use kori.
 
-for (let i = 1; i <= 1000; i++) {
-  console.log("Sorry");
+// for (let i = 1; i <= 1000; i++) {
+//   console.log("Sorry");
+// }
+
+const students = [
+  { id: 1, name: "Rahim Uddin", age: 15, class: 10, marks: 85, section: "A" },
+  { id: 2, name: "Karim Ahmed", age: 16, class: 10, marks: 72, section: "B" },
+  { id: 3, name: "Sadia Islam", age: 15, class: 10, marks: 92, section: "A" },
+  { id: 4, name: "Farhana Akter", age: 16, class: 10, marks: 65, section: "B" },
+  { id: 5, name: "Tanvir Hasan", age: 15, class: 10, marks: 45, section: "A" },
+  { id: 6, name: "Nusrat Jahan", age: 16, class: 10, marks: 88, section: "B" },
+  { id: 7, name: "Mehedi Hasan", age: 15, class: 10, marks: 78, section: "A" },
+  { id: 8, name: "Sumaya Khan", age: 16, class: 10, marks: 95, section: "B" },
+  { id: 9, name: "Rafiqul Islam", age: 15, class: 10, marks: 33, section: "A" },
+  {
+    id: 10,
+    name: "Jannatul Ferdous",
+    age: 16,
+    class: 10,
+    marks: 60,
+    section: "B",
+  },
+  {
+    id: 11,
+    name: "Abdullah Al Mamun",
+    age: 15,
+    class: 10,
+    marks: 81,
+    section: "A",
+  },
+  {
+    id: 12,
+    name: "Sharmin Sultana",
+    age: 16,
+    class: 10,
+    marks: 55,
+    section: "B",
+  },
+  { id: 13, name: "Ariful Islam", age: 15, class: 10, marks: 40, section: "A" },
+  { id: 14, name: "Tasnim Jahan", age: 16, class: 10, marks: 90, section: "B" },
+  { id: 15, name: "Nazmul Huda", age: 15, class: 10, marks: 76, section: "A" },
+  { id: 16, name: "Riya Moni", age: 16, class: 10, marks: 82, section: "B" },
+  {
+    id: 17,
+    name: "Shahidul Alam",
+    age: 15,
+    class: 10,
+    marks: 29,
+    section: "A",
+  },
+  {
+    id: 18,
+    name: "Ayesha Siddika",
+    age: 16,
+    class: 10,
+    marks: 68,
+    section: "B",
+  },
+  {
+    id: 19,
+    name: "Imran Hossain",
+    age: 15,
+    class: 10,
+    marks: 87,
+    section: "A",
+  },
+  { id: 20, name: "Fatema Begum", age: 16, class: 10, marks: 91, section: "B" },
+  { id: 21, name: "Rubel Mia", age: 15, class: 10, marks: 48, section: "A" },
+  {
+    id: 22,
+    name: "Mahmudul Hasan",
+    age: 16,
+    class: 10,
+    marks: 74,
+    section: "B",
+  },
+  { id: 23, name: "Israt Jahan", age: 15, class: 10, marks: 96, section: "A" },
+  { id: 24, name: "Al Amin", age: 16, class: 10, marks: 50, section: "B" },
+  {
+    id: 25,
+    name: "Sabina Yasmin",
+    age: 15,
+    class: 10,
+    marks: 38,
+    section: "A",
+  },
+  {
+    id: 26,
+    name: "Hasanur Rahman",
+    age: 16,
+    class: 10,
+    marks: 84,
+    section: "B",
+  },
+  {
+    id: 27,
+    name: "Moushumi Akter",
+    age: 15,
+    class: 10,
+    marks: 62,
+    section: "A",
+  },
+  { id: 28, name: "Sujon Ahmed", age: 16, class: 10, marks: 79, section: "B" },
+  { id: 29, name: "Fahim Ahmed", age: 15, class: 10, marks: 93, section: "A" },
+  { id: 30, name: "Kulsum Bibi", age: 16, class: 10, marks: 58, section: "B" },
+];
+
+let FailStudent = []; 
+
+// array = []
+// object = {}
+
+for (let i = 0; i <= students.length - 1; i++) {
+  let student = students[i];
+  if (student.marks < 40) {
+    FailStudent.push(student);
+  }
 }
+
+// console.log(FailStudent);
+
+// Task 3 (Filter Logic):
+
+// "Shudhu Section A er student der khuje ber koro jara 80 er beshi peyeche."
