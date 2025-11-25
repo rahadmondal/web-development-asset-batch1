@@ -285,13 +285,40 @@ console.log("Day 3 With Js condition");
 // jodi 300 takar opre koren 5% calculate total pay
 // 300 takar kome jodi kore tumi gorib print koren calculate total pay
 
-let TotalBazar = 500;
-let totalPay;
+// let TotalBazar = 500;
+// let totalPay;
+// let totalDiscount;
 
-if (false){
+// if (TotalBazar >= 500) {
+//   // 10% discount
+//   totalDiscount = (TotalBazar * 10) / 100;
+//   totalPay = TotalBazar - totalDiscount;
+// } else if (TotalBazar >= 300) {
+//   // 5% discount
+//   totalDiscount = (TotalBazar * 5) / 100;
+//   totalPay = TotalBazar - totalDiscount;
+// } else {
+//   //  no discount
+//   totalPay = TotalBazar;
+// }
+// console.log("Your Payable discount :", totalDiscount);
+// console.log("Your Payable ammount :", totalPay);
 
-}else if (true) {
+// Problem 1: Positive or Negative?
+// Task: Create a variable called number. Check if the number is positive or negative.
 
-}else{
+// Problem 2: Odd or Even? ( জোড় না বিজোড় )
+// Task: Check if a number is Even (divisible by 2) or Odd. Teaching Tip: Explain that % gives the remainder.
 
-}
+// Problem 3: The Traffic Light
+
+// let Light = "yellblueow";
+// if (Light === "green") {
+//   console.log("G0!");
+// } else if (Light === "red") {
+//   console.log("Stop");
+// } else if (Light === "yellow") {
+//   console.log("Wait");
+// } else {
+//   console.log("Input Error");
+// }
