@@ -1,4 +1,4 @@
-console.log("day one");
+// console.log("day one");
 
 // dom opration
 // const headingText = document.querySelector("h1"); // null
@@ -73,7 +73,7 @@ console.log("day one");
 // console.log(50 % 20); // 10
 // console.log(2 ** 3); // 8
 
-let count = 20;
+// let count = 20;
 
 // 20
 // ++count = 21
@@ -215,3 +215,83 @@ let count = 20;
 
 // console.log(studentDetails);
 // console.log(studentDetails[0].semester);
+
+console.log("Day 3 With Js condition");
+
+// js condition
+
+// let age = 16;
+
+// if (age >= 18) {
+//   console.log(" Vai tumi vote dite parba");
+// }
+
+// if (age < 18) {
+//   console.log("vai tomar akhon o boyos hoi nai aro boro how");
+// }
+
+// if (age >= 18) {
+//   console.log(" Vai tumi vote dite parba");
+// } else {
+//   console.log("vai tomar akhon o boyos hoi nai aro boro how");
+// }
+
+// let mark = 50;
+
+// if (mark >= 80) {
+//   console.log("vai tumi A+ misty khawa");
+// } else if (mark >= 70) {
+//   console.log("Vai tumi A paico Aro valo koro poro");
+// } else if (mark >= 60) {
+//   console.log("a-");
+// } else if (mark >= 50) {
+//   console.log("b");
+// }else{
+//     console.log(" Vai tumi Fail korco Tarati biyer Dawat daw");
+// }
+
+// if (mark >= 80) {
+//   console.log("vai tumi A+ misty khawa");
+//   return;
+// }
+
+// if (mark >= 70) {
+//   console.log("Vai tumi A paico Aro valo koro poro");
+//   return;
+// }
+
+// if (mark < 33) {
+//   console.log(" Vai tumi Fail korco Tarati biyer Dawat daw");
+//   return;
+// }
+
+// // if (condition){
+// //   code block
+// }
+
+// let a = 70;
+// let b = 50;
+// let c = 30;
+
+// if (a > b && a > c) {
+//   console.log("a boro");
+// } else if (b > a && b > c) {
+//   console.log("b boro");
+// } else {
+//   console.log("c boro");
+// }
+
+// jodi apni 500 takar opre bazar koren 10% calculate total pay
+// jodi 300 takar opre koren 5% calculate total pay
+// 300 takar kome jodi kore tumi gorib print koren calculate total pay
+
+let TotalBazar = 500;
+let totalPay;
+
+if (false){
+
+}else if (true) {
+
+}else{
+
+}
