@@ -322,3 +322,10 @@ console.log("Day 3 With Js condition");
 // } else {
 //   console.log("Input Error");
 // }
+
+// Loop Ki? (What is a Loop?)
+// Loop mane holo "Eki kaj bar bar kora". Jokhon amra chai computer eki kaj 10 bar, 100 bar, ba condition puron na howa porjonto koruk, tokhon amra Loop use kori.
+
+for (let i = 1; i <= 1000; i++) {
+  console.log("Sorry");
+}
