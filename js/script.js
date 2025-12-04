@@ -216,7 +216,7 @@
 // console.log(studentDetails);
 // console.log(studentDetails[0].semester);
 
-console.log("Day 3 With Js condition");
+// console.log("Day 3 With Js condition");
 
 // js condition
 
@@ -330,123 +330,760 @@ console.log("Day 3 With Js condition");
 //   console.log("Sorry");
 // }
 
-const students = [
-  { id: 1, name: "Rahim Uddin", age: 15, class: 10, marks: 85, section: "A" },
-  { id: 2, name: "Karim Ahmed", age: 16, class: 10, marks: 72, section: "B" },
-  { id: 3, name: "Sadia Islam", age: 15, class: 10, marks: 92, section: "A" },
-  { id: 4, name: "Farhana Akter", age: 16, class: 10, marks: 65, section: "B" },
-  { id: 5, name: "Tanvir Hasan", age: 15, class: 10, marks: 45, section: "A" },
-  { id: 6, name: "Nusrat Jahan", age: 16, class: 10, marks: 88, section: "B" },
-  { id: 7, name: "Mehedi Hasan", age: 15, class: 10, marks: 78, section: "A" },
-  { id: 8, name: "Sumaya Khan", age: 16, class: 10, marks: 95, section: "B" },
-  { id: 9, name: "Rafiqul Islam", age: 15, class: 10, marks: 33, section: "A" },
-  {
-    id: 10,
-    name: "Jannatul Ferdous",
-    age: 16,
-    class: 10,
-    marks: 60,
-    section: "B",
-  },
-  {
-    id: 11,
-    name: "Abdullah Al Mamun",
-    age: 15,
-    class: 10,
-    marks: 81,
-    section: "A",
-  },
-  {
-    id: 12,
-    name: "Sharmin Sultana",
-    age: 16,
-    class: 10,
-    marks: 55,
-    section: "B",
-  },
-  { id: 13, name: "Ariful Islam", age: 15, class: 10, marks: 40, section: "A" },
-  { id: 14, name: "Tasnim Jahan", age: 16, class: 10, marks: 90, section: "B" },
-  { id: 15, name: "Nazmul Huda", age: 15, class: 10, marks: 76, section: "A" },
-  { id: 16, name: "Riya Moni", age: 16, class: 10, marks: 82, section: "B" },
-  {
-    id: 17,
-    name: "Shahidul Alam",
-    age: 15,
-    class: 10,
-    marks: 29,
-    section: "A",
-  },
-  {
-    id: 18,
-    name: "Ayesha Siddika",
-    age: 16,
-    class: 10,
-    marks: 68,
-    section: "B",
-  },
-  {
-    id: 19,
-    name: "Imran Hossain",
-    age: 15,
-    class: 10,
-    marks: 87,
-    section: "A",
-  },
-  { id: 20, name: "Fatema Begum", age: 16, class: 10, marks: 91, section: "B" },
-  { id: 21, name: "Rubel Mia", age: 15, class: 10, marks: 48, section: "A" },
-  {
-    id: 22,
-    name: "Mahmudul Hasan",
-    age: 16,
-    class: 10,
-    marks: 74,
-    section: "B",
-  },
-  { id: 23, name: "Israt Jahan", age: 15, class: 10, marks: 96, section: "A" },
-  { id: 24, name: "Al Amin", age: 16, class: 10, marks: 50, section: "B" },
-  {
-    id: 25,
-    name: "Sabina Yasmin",
-    age: 15,
-    class: 10,
-    marks: 38,
-    section: "A",
-  },
-  {
-    id: 26,
-    name: "Hasanur Rahman",
-    age: 16,
-    class: 10,
-    marks: 84,
-    section: "B",
-  },
-  {
-    id: 27,
-    name: "Moushumi Akter",
-    age: 15,
-    class: 10,
-    marks: 62,
-    section: "A",
-  },
-  { id: 28, name: "Sujon Ahmed", age: 16, class: 10, marks: 79, section: "B" },
-  { id: 29, name: "Fahim Ahmed", age: 15, class: 10, marks: 93, section: "A" },
-  { id: 30, name: "Kulsum Bibi", age: 16, class: 10, marks: 58, section: "B" },
-];
-
-let FailStudent = []; 
+// let FailStudent = [];
 
 // array = []
 // object = {}
 
-for (let i = 0; i <= students.length - 1; i++) {
-  let student = students[i];
-  if (student.marks < 40) {
-    FailStudent.push(student);
-  }
-}
+// for (let i = 0; i <= students.length - 1; i++) {
+//   let student = students[i];
+//   if (student.marks < 40) {
+//     FailStudent.push(student);
+//   }
+// }
 
 // console.log(FailStudent);
 
 // Task 3 (Filter Logic):
 
 // "Shudhu Section A er student der khuje ber koro jara 80 er beshi peyeche."
+// let consdition;
+// if (false) {
+//   consdition = "10%";
+// } else {
+//   consdition = "No discount";
+// }
+
+// The Conditional (Ternary) Operator
+
+// const TotalBazar = 500.1;
+
+// let discount = 500 < TotalBazar ? "10% Discount" : "No Discount";
+// console.log(discount);
+
+// const num1 = 0;
+
+// let numberType =
+//   num1 > 0 ? "Is Posative" : num1 === 0 ? "Is Zero Number" : "Is Navative";
+// console.log(numberType);
+
+// switch(expression) {
+//   case x:
+//     // code block
+//     break;
+//   case y:
+//     // code block
+//     break;
+//   default:
+//     // code block
+// }
+
+// let result1 = 5 * 20; //50
+// console.log(result1)
+
+// let day;
+// let date = new Date().getDay();
+
+// switch (date) {
+//   case 0:
+//     day = "Sunday";
+//     break;
+//   case 1:
+//     day = "Monday";
+//     break;
+//   case 2:
+//     day = "Tuesday";
+//     break;
+//   case 3:
+//     day = "Wednesday";
+//     break;
+//   case 4:
+//     day = "Thursday";
+//     break;
+//   case 5:
+//     day = "Friday";
+//     break;
+//   case 6:
+//     day = "Saturday";
+// }
+
+// let mark = 80;
+
+// switch (mark) {
+//   case 80:
+//     console.log("A+");
+//     break;
+//   case "red":
+//     console.log("STOP");
+//     break;
+//   case "yellow":
+//     console.log("Wait");
+// }
+
+// console.log(new Date().getMonth());
+
+// let day;
+// let date = 5; //3;
+
+// switch (date) {
+//   case 0:
+//   case 1:
+//   case 2:
+//   case 3:
+//   case 4:
+//   case 5:
+//     day = "Friday";
+//     console.log("This is Of day");
+//     break;
+//   case 6:
+//     day = "Saturday";
+//     console.log("This is Of day");
+//     break;
+//   default:
+//     console.log("kono kisu mile nai");
+// }
+
+// for loop
+
+// const FailStudent = [];
+
+// for (let i = 0; i <= students.length; i++) {
+//   const student = students[i];
+//   if (student?.marks < 40) {
+//     FailStudent.push(student);
+//   }
+// }
+
+// const firstName = "Rahad";
+// const lastName = "Mondal";
+
+// console.log(10 - "10000");
+
+// let i = 0;
+
+// while (true) {
+//   let text;
+//   text = "The number is " + i;
+//   console.log(text);
+// }
+
+// while (false) {
+//   console.log("sorry");
+// }
+
+// do {
+//   console.log("sorry");
+// } while (false);
+
+// for (let i = 0; i < 10; i++) {
+//   let text;
+//   if (i === 3) {
+//     continue;
+//   }
+//   text = "The number is " + i;
+
+//   console.log(text);
+// }
+
+// return = code ber hoye jai
+// break = loop ber hoi
+// contiune = runing akta loop skip korbe
+
+// console.log("Number Method");
+
+// const textLength = "ABCDEFGHI JKLMNOPQRS TUVWXYZ";
+
+// console.log(textLength.length);
+
+// The at(position) Method
+// The charAt(position) Method
+// The charCodeAt(position) Method
+// Using property access [] like in arrays
+
+// console.log(textLength.charCodeAt(1));
+
+// console.log(textLength[0]);
+
+// const firstName = "Rahad";
+
+// const lastName = "Mondal";
+
+// const date = new Date();
+
+// console.log(
+//   `My name is ${firstName} ${lastName} date: ${date.toLocaleDateString()} time: ${date.toLocaleTimeString()} sum ${
+//     20 + 20
+//   }`
+// );
+
+// const name1 = "RAHAD MONDAL";
+
+// console.log(name.slice(-6));
+
+// console.log(name1.toUpperCase().trim());
+// console.log(name1.toLowerCase().trim());
+// console.log(name1.trim());
+// console.log(name1.trimEnd());
+// console.log(name1.trimStart());
+// console.log(name1.repeat(3));
+
+// let text = "Please visit Microsoft and Microsoft!";
+
+// let text2 = text.replaceAll('Microsoft' , "Rahad-mondal.com")
+// console.log(text2)
+
+// let roll = "101|102|103|104|105|106|107";
+
+// let rollArray = roll.split("|");
+// console.log(rollArray);
+
+// let fullName = "Md A Rahad Mondal Rahad";
+
+// console.log(fullName.search("Rahad"));
+
+// if (findIndex >= 0) {
+//   console.log("khuje pawa gese");
+// } else {
+//   console.log("khuje pawa jai nai ");
+// }
+
+// console.log(fullName.startsWith("A",3));
+
+// let match = fullName.matchAll("Rahad");
+
+// console.log(Array.from(match));
+
+// console.log(fullName.includes("A"));
+
+// let fullName = "Md A Rahad Mondal Rahad Rahad";
+
+// for (const char of fullName) {
+//   console.log(char);
+// }
+
+// const students = [
+//   { name: "Charlie", grade: "A" },
+//   { name: "David", grade: "B" },
+//   { name: "Eve", grade: "A" },
+// ];
+
+// for (let student of students){
+//   console.log(student)
+// }
+
+// students.forEach((value) => {
+//   console.log(value);
+//   console.log(index);
+//   console.log(arrary);
+// });
+
+// const person = {
+//   firstName: "John",
+//   lastName: "Doe",
+//   age: 30,
+// };
+
+// console.log(person.age);
+// console.log(person["age"]);
+
+// for (let i in person) {
+//   console.log(`${i} is : ${person[i]}`);
+// }
+
+// let x = 1010
+
+// console.log(typeof x)
+// let toStringX = x.toString()
+// console.log(x)
+// console.log(typeof toStringX)
+
+// let x1 = new Number(951);
+
+// const num1 = 500;
+
+// console.log(parseFloat(num1))
+
+// const jogfol = sum(10, 30);
+
+// console.log(total);
+// console.log(jogfol);
+
+// function Total() {
+//   let sum = 120;
+// }
+
+// Total();
+
+// if (true) {
+//   let sum = 120;
+// }
+
+// console.log(sum)
+
+// const array = [10, 20, 30, 40, 50, 60, 70];
+
+// const array2 = [...array]; //[10, 20, 30, 40, 50, 60, 70]; + 80
+// array2.push(90);
+
+// console.log(array2);
+// console.log(array);
+
+// function sum(...args) {
+//   let sum = 0;
+//   for (let arg of args) {
+//     sum = sum + arg;
+//   }
+//   return sum;
+// }
+
+// let x = sum(4, 9, 16, 25, 29, 100, 66, 77);
+
+// console.log(x);1
+
+// let sum = function (a, b) {
+//   console.log("fuc call");
+//   return a + b;
+// };
+
+// sum(5, 5);
+
+// let sum = (a, b) =>(a + b) ;
+
+// const jogfol = sum(10, 20);
+
+// console.log(jogfol);
+
+// console.log(person);
+
+// const person2 = {};
+
+// person2.name = "X";
+// person2.age = 30;
+// person2.id = 102;
+
+// function func() {}
+
+// function Person(first, last, age, eye) {
+//   this.firstName = first;
+//   this.lastName = last;
+//   this.age = age;
+//   this.eyeColor = eye;
+// }
+
+// const myFather = new Person("John", "Doe", 50, "blue");
+// console.log(myFather);
+
+// const person = {
+//   firstName: "Rahad",
+//   lastName: "Mondal",
+//   age: 22,
+//   id: 101,
+//   address: {
+//     House: "#05",
+//     Road: "#10",
+//     Block: "C",
+//     PostCode: 1810,
+//     thana: "Mirpur",
+//     Distric: "Dhaka",
+//   },
+//   BloodGroup: "O+",
+//   fullname: function () {
+//     return this.firstName + " " + this.lastName;
+//   },
+// };
+
+// delete person.id;
+
+// console.log(person.address.House);
+
+// const cars = ["Saab", "Volvo", "BMW"];
+
+// // console.log(cars.length);
+// // console.log(cars[cars.length - 1]);
+
+// const points = new Array(40);
+
+// console.log(points)
+
+// cars.push("Opel");
+
+// console.log(cars);
+
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+// const newJoin = fruits.join(" ");
+
+// fruits.pop();
+// fruits.pop();
+// fruits.shift();
+// fruits.unshift("Lemon");
+
+// fruits.delete(1)
+
+// let position = fruits.indexOf("Banana")
+
+// console.log(position);
+
+const studentData = [
+  {
+    id: 101,
+    name: "Arafat Rahman",
+    age: 20,
+    department: "CSE",
+    cgpa: 3.5,
+    city: "Dhaka",
+  },
+  {
+    id: 102,
+    name: "Sumaiya Akter",
+    age: 19,
+    department: "English",
+    cgpa: 3.75,
+    city: "Chittagong",
+  },
+  {
+    id: 103,
+    name: "Rahim Uddin",
+    age: 21,
+    department: "BBA",
+    cgpa: 2.9,
+    city: "Sylhet",
+  },
+  {
+    id: 104,
+    name: "Tania Sultana",
+    age: 20,
+    department: "Physics",
+    cgpa: 3.25,
+    city: "Rajshahi",
+  },
+  {
+    id: 105,
+    name: "Karim Hossain",
+    age: 22,
+    department: "EEE",
+    cgpa: 3.8,
+    city: "Dhaka",
+  },
+  {
+    id: 106,
+    name: "Nusrat Jahan",
+    age: 19,
+    department: "Economics",
+    cgpa: 3.6,
+    city: "Khulna",
+  },
+  {
+    id: 107,
+    name: "Fahim Ahmed",
+    age: 21,
+    department: "CSE",
+    cgpa: 3.1,
+    city: "Comilla",
+  },
+  {
+    id: 108,
+    name: "Sadia Islam",
+    age: 20,
+    department: "Botany",
+    cgpa: 3.45,
+    city: "Barisal",
+  },
+  {
+    id: 109,
+    name: "Hasan Mahmud",
+    age: 22,
+    department: "Mathematics",
+    cgpa: 2.85,
+    city: "Dhaka",
+  },
+  {
+    id: 110,
+    name: "Farhana Yeasmin",
+    age: 21,
+    department: "BBA",
+    cgpa: 3.9,
+    city: "Chittagong",
+  },
+  {
+    id: 111,
+    name: "Shakil Khan",
+    age: 20,
+    department: "Marketing",
+    cgpa: 3.0,
+    city: "Rangpur",
+  },
+  {
+    id: 112,
+    name: "Meher Afroz",
+    age: 19,
+    department: "Law",
+    cgpa: 3.55,
+    city: "Dhaka",
+  },
+  {
+    id: 113,
+    name: "Rakib Hasan",
+    age: 23,
+    department: "Civil Eng.",
+    cgpa: 3.3,
+    city: "Bogra",
+  },
+  {
+    id: 114,
+    name: "Moushumi Roy",
+    age: 20,
+    department: "Chemistry",
+    cgpa: 3.7,
+    city: "Sylhet",
+  },
+  {
+    id: 115,
+    name: "Imran Nazir",
+    age: 21,
+    department: "History",
+    cgpa: 2.75,
+    city: "Mymensingh",
+  },
+  {
+    id: 116,
+    name: "Nafisa Maliha",
+    age: 20,
+    department: "CSE",
+    cgpa: 3.95,
+    city: "Dhaka",
+  },
+  {
+    id: 117,
+    name: "Sohel Rana",
+    age: 22,
+    department: "Sociology",
+    cgpa: 3.15,
+    city: "Jessore",
+  },
+  {
+    id: 118,
+    name: "Rabeya Bosri",
+    age: 21,
+    department: "English",
+    cgpa: 3.4,
+    city: "Dhaka",
+  },
+  {
+    id: 119,
+    name: "Tarek Aziz",
+    age: 23,
+    department: "Political Sci",
+    cgpa: 3.05,
+    city: "Rajshahi",
+  },
+  {
+    id: 120,
+    name: "Ishrat Jahan",
+    age: 20,
+    department: "Accounting",
+    cgpa: 3.65,
+    city: "Chittagong",
+  },
+  {
+    id: 121,
+    name: "Aminul Islam",
+    age: 22,
+    department: "EEE",
+    cgpa: 3.2,
+    city: "Gazipur",
+  },
+  {
+    id: 122,
+    name: "Sharmin Sultana",
+    age: 19,
+    department: "Physics",
+    cgpa: 3.85,
+    city: "Dhaka",
+  },
+  {
+    id: 123,
+    name: "Jahidul Islam",
+    age: 21,
+    department: "CSE",
+    cgpa: 2.95,
+    city: "Comilla",
+  },
+  {
+    id: 124,
+    name: "Fatema Begum",
+    age: 20,
+    department: "Botany",
+    cgpa: 3.5,
+    city: "Khulna",
+  },
+  {
+    id: 125,
+    name: "Mahfuzur Rahman",
+    age: 22,
+    department: "BBA",
+    cgpa: 3.1,
+    city: "Dhaka",
+  },
+  {
+    id: 126,
+    name: "Samira Khan",
+    age: 21,
+    department: "Economics",
+    cgpa: 3.78,
+    city: "Sylhet",
+  },
+  {
+    id: 127,
+    name: "Al-Amin",
+    age: 23,
+    department: "Mathematics",
+    cgpa: 2.8,
+    city: "Barisal",
+  },
+  {
+    id: 128,
+    name: "Tasnim Jarine",
+    age: 20,
+    department: "Law",
+    cgpa: 3.6,
+    city: "Dhaka",
+  },
+  {
+    id: 129,
+    name: "Rashedul Karim",
+    age: 21,
+    department: "Marketing",
+    cgpa: 3.35,
+    city: "Chittagong",
+  },
+  {
+    id: 130,
+    name: "Nusrat Faria",
+    age: 19,
+    department: "CSE",
+    cgpa: 3.92,
+    city: "Rajshahi",
+  },
+];
+
+// const numbers = [4, 9, 16, 25, 29];
+
+// const findItem = numbers.find((value, index, arrary) => value > 18);
+
+// // function myFunction(value) {
+// //   return value > 18;
+// // }
+
+// console.log(findItem);
+
+// const findStudent = studentData.find((item, index) => item.id === 215);
+
+// const filterStudent = studentData.filter(
+//   (item, index) => item.department.toLowerCase() === "cse".toLowerCase()
+// );
+
+// console.log(filterStudent);
+
+// studentData.forEach((item, index) => console.log(item));
+
+// const numbers1 = [45, 4, 9, 16, 25];
+
+// const dobuleNumber1 = numbers1.map((item) => item * 2);
+
+// console.log(dobuleNumber1)
+
+/*hjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjl;
+jhskdfhhfdjklghljkhgjffffhgfdgl */
+
+// console.log(num1);
+
+// let num1 = 10; // un / death
+
+// console.log(age);  //unde
+//  // লাইন ১
+// var age = 20; // লাইন ২
+// greet(); // লাইন ৩
+
+// function greet() {
+//   console.log("Hello!");
+// }
+
+// // age = u/20
+// // greet = fuc copy
+
+// //
+
+// var a = 10;
+
+// function first() {
+//   var wifeName = "Rahima";
+//   console.log("First ফাংশনে:", myName); // এখানে myName খুঁজবে
+//   second();
+
+// }
+
+// function second() {
+//   var age = 25; // লোকাল ভেরিয়েবল
+//   console.log("Second ফাংশনে:", myName); // 🔍 এখানেও myName খুঁজবে
+// }
+
+// first();
+
+// const points = [40, 100, 1, 5, 25, 10];
+
+// console.log(points);
+
+// a = 40 , b = 100 // - 60
+// a = 100 , b= 1 // 99
+// [40 , 1 , 100]
+// a = 1 , 100 // -99
+
+// points.sort((a, b) => {
+//   return b - a;
+// });
+
+// console.log(points);
+
+// const cars = [
+//   { type: "Volvo", year: 2016 },
+//   { type: "Saab", year: 2001 },
+//   { type: "BMW", year: 2010 },
+// ];
+
+// cars.sort((a, b) => a.year - b.year);
+
+// console.log(cars)
+
+// for (let num of numbers) {
+//   sumOfNumbers = sumOfNumbers + num;
+// }
+// const numbers = [45, 4, 9, 16, 25];
+// const sumOfNumbers = numbers.reduce((total, value, index, arr) => {
+//   return total + value; //49 +9 +16 +25
+// }, 0);
+
+// console.log(sumOfNumbers);
+
+// let text = "ABCDEFG";
+// console.log(Array.from(text));
+
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// const keys = fruits.keys();
+
+// for (let key of keys) {
+//   console.log(key);
+// }
+
+// const reg = 1001;
+// const { id, name, age, department, cgpa, city } = {
+//   id: 130,
+//   name: "Nusrat Faria",
+//   age: 19,
+//   department: "CSE",
+//   cgpa: 3.92,
+//   city: "Rajshahi",
+//   reg,
+// };
+
+// console.log(id, name);
