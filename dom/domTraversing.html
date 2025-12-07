@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="parent">
+      <!-- something -->
+      <p id="child">This is child paragraph</p>
+    </div>
+
+    <ul id="items">
+      <li>Apple</li>
+      <li>Banana</li>
+      <li>Orange</li>
+    </ul>
+  </body>
+
+  <script>
+    const child = document.getElementById("child");
+
+    const ul = document.getElementById("items");
+
+    // const firstChild = ul.firstElementChild;
+    // const lastChild = ul.lastElementChild;
+    // const allChild = ul.children;
+
+    const newItem = document.createElement("li");
+    newItem.innerText = "Mangoo";
+    ul.appendChild(newItem);
+
+
+    
+  </script>
+</html>

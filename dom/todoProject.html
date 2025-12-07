@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="bn">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Simple Todo App</title>
+    <style>
+      :root {
+        --bg: #f7f8fb;
+        --card: #ffffff;
+        --muted: #6b7280;
+        --accent: #0ea5a4;
+        --danger: #ef4444;
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI",
+          Roboto, "Helvetica Neue", Arial;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: var(--bg);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        padding: 24px;
+      }
+      .app {
+        width: 100%;
+        max-width: 520px;
+      }
+
+      .card {
+        background: var(--card);
+        border-radius: 12px;
+        padding: 20px 18px 16px;
+        box-shadow: 0 6px 20px rgba(15, 23, 42, 0.06);
+      }
+      header {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+      .logo {
+        width: 44px;
+        height: 44px;
+        border-radius: 10px;
+        background: linear-gradient(135deg, var(--accent), #60a5fa);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-weight: 700;
+      }
+      h1 {
+        margin: 0;
+        font-size: 18px;
+      }
+      p.lead {
+        margin: 6px 0 16px;
+        color: var(--muted);
+        font-size: 13px;
+      }
+
+      .new-todo {
+        display: flex;
+        gap: 8px;
+      }
+      .new-todo input {
+        flex: 1;
+        padding: 10px 12px;
+        border-radius: 8px;
+        border: 1px solid #e6e9ef;
+        font-size: 14px;
+      }
+      .new-todo button {
+        padding: 10px 14px;
+        border-radius: 8px;
+        border: 0;
+        background: var(--accent);
+        color: white;
+        font-weight: 600;
+        cursor: pointer;
+      }
+      .new-todo button:active {
+        transform: translateY(1px);
+      }
+
+      ul.list {
+        list-style: none;
+        padding: 0;
+        margin: 18px 0;
+        max-height: 360px;
+        overflow: auto;
+      }
+      li.item {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 10px;
+        border-radius: 8px;
+        margin-bottom: 8px;
+        border: 1px solid #f1f4f8;
+      }
+      li.item.completed {
+        opacity: 0.65;
+        text-decoration: line-through;
+      }
+      .item .text {
+        flex: 1;
+      }
+      .item button.icon {
+        border: 0;
+        background: transparent;
+        cursor: pointer;
+        padding: 6px;
+        border-radius: 6px;
+      }
+      .item button.delete {
+        color: var(--danger);
+      }
+
+      .controls {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        margin-top: 8px;
+      }
+      .filters {
+        display: flex;
+        gap: 8px;
+      }
+      .filters button {
+        padding: 6px 10px;
+        border-radius: 8px;
+        border: 1px solid transparent;
+        background: transparent;
+        cursor: pointer;
+      }
+      .filters button.active {
+        border-color: #e6eef0;
+        background: #f8fafb;
+      }
+      .meta {
+        color: var(--muted);
+        font-size: 13px;
+      }
+
+      footer.note {
+        margin-top: 12px;
+        color: var(--muted);
+        font-size: 12px;
+        text-align: center;
+      }
+
+      /* small screens */
+      @media (max-width: 420px) {
+        .card {
+          padding: 16px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="app">
+      <div class="card" role="application" aria-labelledby="title">
+        <header>
+          <div class="logo">TD</div>
+          <div>
+            <h1 id="title">Simple Todo App</h1>
+            <p class="lead">HTML • CSS • Pure JavaScript</p>
+          </div>
+        </header>
+
+        <div style="margin-top: 14px" class="new-todo">
+          <input
+            id="todo-input"
+            placeholder="নতুন টাস্ক লিখুন"
+            aria-label="Add todo"
+          />
+          <button id="add-btn">Add</button>
+        </div>
+
+        <ul id="todo-list" class="list" aria-live="polite"></ul>
+
+        <div class="controls">
+          <div class="filters" role="tablist" aria-label="Filters">
+            <button class="filter active" data-filter="all" role="tab">
+              All
+            </button>
+            <button class="filter" data-filter="active" role="tab">
+              Active
+            </button>
+            <button class="filter" data-filter="completed" role="tab">
+              Completed
+            </button>
+          </div>
+
+          <div style="display: flex; gap: 8px; align-items: center">
+            <div class="meta" id="count">0 items</div>
+            <button id="clear-completed" class="icon" title="Clear completed">
+              Clear
+            </button>
+          </div>
+        </div>
+
+        <footer class="note">
+          ডাবল-ক্লিক করে সম্পাদনা করুন • টাস্ক সেভ হয় ব্রাউজারে
+        </footer>
+      </div>
+    </div>
+
+    <script>
+      // Simple Todo App (pure JS)
+      const input = document.getElementById("todo-input");
+      const addBtn = document.getElementById("add-btn");
+      const listEl = document.getElementById("todo-list");
+      let todos = [];
+
+      const addTodo = (todo) => {
+        const newTodo = {
+          id: new Date().toString(),
+          todoName: todo,
+          isDone: false,
+        };
+        todos.push(newTodo);
+        render();
+      };
+
+      const removeTodo = (id) => {
+        const updateTodo = todos.filter((item) => item.id !== id);
+        todos = updateTodo;
+        render();
+      };
+
+      const render = () => {
+        listEl.innerHTML = "";
+
+        todos.forEach((todo) => {
+          const li = document.createElement("li");
+          li.textContent = todo.todoName;
+          li.className = "item" + " " + (todo.isDone && "completed");
+          listEl.appendChild(li);
+
+          //   check box
+          const checkbox = document.createElement("input");
+          checkbox.type = "checkbox";
+          checkbox.checked = todo.isDone;
+          checkbox.addEventListener("change", () => {
+            const updateTodo = todos.map((item) =>
+              item.id == todo.id ? { ...item, isDone: !item.isDone } : item
+            );
+            todos = updateTodo;
+            render();
+          });
+
+          li.appendChild(checkbox);
+
+          // delete button
+          const del = document.createElement("button");
+          del.className = "icon delete";
+          del.title = "Delete";
+          del.innerText = "✕";
+          del.addEventListener("click", () => removeTodo(todo.id));
+          li.appendChild(del);
+        });
+      };
+
+      addBtn.addEventListener("click", () => {
+        const userInput = input.value;
+        addTodo(userInput);
+        input.value = "";
+        input.focus();
+      });
+    </script>
+  </body>
+</html>
